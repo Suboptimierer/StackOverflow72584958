@@ -1,6 +1,6 @@
 # StackOverflow72584958
 
-This repository is a sample implementation for [question 72584958 on StackOverflow](https://stackoverflow.com/q/72584958/12915015). The Safari App Extension executes native Swift code whenever the `SFSafariToolbarItem` is clicked and the popover/`SFSafariExtensionViewController` is displayed. Implementation details and other information can be found in my answer on StackOverflow.
+This repository is a sample implementation for [question 72584958 on StackOverflow](https://stackoverflow.com/q/72584958/12915015). The Safari App Extension executes native Swift code whenever the `SFSafariToolbarItem` is clicked and the popover/`SFSafariExtensionViewController` is displayed. Implementation details and other information can be found in [my answer on StackOverflow](https://stackoverflow.com/a/72707334/12915015).
 
 ## Question
 
