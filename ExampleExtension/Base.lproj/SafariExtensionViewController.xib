@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="20037" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="20037"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="SafariExtensionViewController" customModule="ExampleExtension" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="c22-O7-iKe" id="vwT-Xx-Aiz"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe">
+            <rect key="frame" x="0.0" y="0.0" width="330" height="142"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <stackView distribution="fill" orientation="vertical" alignment="centerX" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w2e-XJ-7mt">
+                    <rect key="frame" x="76" y="30" width="179" height="82"/>
+                    <subviews>
+                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ctV-Kq-WPQ">
+                            <rect key="frame" x="64" y="25.5" width="50" height="63"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="O6J-LO-JNT"/>
+                                <constraint firstAttribute="width" constant="50" id="eXn-fx-6ar"/>
+                            </constraints>
+                            <imageCell key="cell" controlSize="large" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" id="yzs-ev-i1t">
+                                <imageReference key="image" image="checkmark.seal.fill" catalog="system" symbolScale="large"/>
+                            </imageCell>
+                        </imageView>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="MCT-ez-pAH">
+                            <rect key="frame" x="-2" y="0.0" width="183" height="24"/>
+                            <textFieldCell key="cell" lineBreakMode="clipping" title="Swift code executed" id="xHw-Ui-DBn">
+                                <font key="font" metaFont="system" size="20"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                    </subviews>
+                    <visibilityPriorities>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                    </visibilityPriorities>
+                    <customSpacing>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                    </customSpacing>
+                </stackView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="w2e-XJ-7mt" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="oZD-k5-q0y"/>
+                <constraint firstItem="w2e-XJ-7mt" firstAttribute="centerX" secondItem="c22-O7-iKe" secondAttribute="centerX" id="vKN-SQ-f3C"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="153.5"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="checkmark.seal.fill" catalog="system" width="21" height="22"/>
+    </resources>
+</document>
